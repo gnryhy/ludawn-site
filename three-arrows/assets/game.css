@@ -36,4 +36,21 @@ th, td { border: 1px solid var(--line); padding: .45rem .6rem; text-align: left;
 th { background: var(--card); }
 hr { border: 0; border-top: 1px solid var(--line); margin: 2.5rem 0; }
 code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: .92em; overflow-wrap: anywhere; }
-mark.todo { background: var(--mark-bg); color: var(--mark-fg); font-weight: 700; padding: 0 .25rem; border-radius: .2rem; overflow-wrap: anywhere; }
+
+/* Three Arrows theme: turquoise, gold, parchment. Used only under /three-arrows/. */
+:root{--bg:#f6efdf;--fg:#2a2118;--muted:#6a5b47;--line:#d9c9a8;--link:#0f6f73;--card:#fbf6ea;--gold:#b8892b;--teal:#147a7e}
+@media (prefers-color-scheme:dark){:root{--bg:#161310;--fg:#efe6d4;--muted:#b3a58d;--line:#3a3126;--link:#58c7c9;--card:#1f1a15;--gold:#d7ab4d;--teal:#3fb3b6}}
+body{font-family:Georgia,"Iowan Old Style","Palatino Linotype","Noto Serif",serif}
+header{border-bottom:3px double var(--gold);display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:.5rem}
+.brand{color:var(--teal);font-size:1.15rem;letter-spacing:.02em}
+.studio{font-size:.9rem;color:var(--muted);text-decoration:none}
+h1{color:var(--teal)}
+h2{border-bottom:1px solid var(--line);padding-bottom:.2rem}
+.box{border-color:var(--gold)}
+.game-hero{padding:1.5rem 0 .5rem}
+.game-hero h1{font-size:clamp(1.9rem,5vw,2.7rem);margin:.25rem 0}
+.game-hero .sub{font-style:italic;color:var(--muted);margin:0 0 1rem}
+.pill{display:inline-block;border:1px solid var(--gold);color:var(--gold);border-radius:999px;padding:.1rem .7rem;font-size:.85rem;font-family:system-ui,sans-serif}
+.links{list-style:none;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(14rem,1fr));gap:.75rem}
+.links a{display:block;background:var(--card);border:1px solid var(--line);border-left:4px solid var(--teal);border-radius:.4rem;padding:.8rem 1rem;text-decoration:none;color:var(--fg)}
+.links a span{display:block;color:var(--muted);font-size:.9rem}

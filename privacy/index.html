@@ -3,289 +3,41 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Gizlilik Politikası · Üç Ok: Selçuklu Seferi · Ludawn</title>
-<meta name="description" content="Üç Ok: Selçuklu Seferi (Three Arrows: Seljuk Campaign) gizlilik politikası. Privacy policy.">
-<link rel="stylesheet" href="/style.css">
+<title>Gizlilik · Ludawn</title>
+<meta name="description" content="Ludawn web sitesi ve oyunları için gizlilik bilgileri. Privacy information for the Ludawn website and games.">
+<link rel="stylesheet" href="/assets/site.css">
 </head>
 <body>
-<header>
+<div class="top"><div class="wrap">
 <a class="brand" href="/">Ludawn</a>
-<nav class="langs" aria-label="Dil / Language">
-<a href="#tr">Türkçe</a> · <a href="#en" lang="en">English</a>
-</nav>
-</header>
-<main>
-
-<article id="tr" lang="tr">
-<h1>Gizlilik Politikası</h1>
-<p class="muted">Son güncelleme: 10 Kasım 2026</p>
-<div class="box">
-<p><strong>Oyun:</strong> Üç Ok: Selçuklu Seferi (mağaza adı: Three Arrows: Seljuk Campaign; paket adı <code>com.ludawn.selcuklular</code>)<br>
-<strong>Veri sorumlusu:</strong> Yahya Güner (Ludawn)<br>
-<strong>İletişim:</strong> <a href="mailto:support@ludawn.com">support@ludawn.com</a></p>
-</div>
-<p>Bu politika, Üç Ok: Selçuklu Seferi mobil oyununda hangi verilerin, neden ve nasıl işlendiğini anlatır.</p>
-
-<h2>1. Kısaca</h2>
-<ul>
-<li>Oyun hesap açmadan, misafir olarak oynanır. Ad, telefon, adres, kişi listesi, konum, fotoğraf ya da mikrofon erişimi istemeyiz.</li>
-<li>Anonim kullanım verisi yalnız sen "Kabul" dersen toplanır. Ayarlar'dan istediğin an kapatabilirsin.</li>
-<li>Reklam kimliği toplanmaz.</li>
-<li>Giriş yaparsan (Google ya da Apple) oyun kaydın hesabına bağlı olarak bulutta saklanır. Hesabını oyunun içinden silebilirsin.</li>
-<li>Verilerini satmayız.</li>
-</ul>
-
-<h2>2. Hangi verileri işliyoruz</h2>
-
-<h3>2.1 Anonim kullanım verisi (isteğe bağlı)</h3>
-<p>İlk açılışta sorulur. "Kabul" dersen Google Firebase Analytics aracılığıyla şunlar toplanır:</p>
-<ul>
-<li>Oyun içi olaylar: oturum başlangıcı, öğretici adımları, dalga ve savaş sonuçları, yükseltmeler, reklam ve mağaza ekranı olayları, satın alınan ürünün kimliği ve fiyatı.</li>
-<li>Rastgele üretilen anonim kurulum kimliği ve Firebase'in uygulama örneği kimliği.</li>
-<li>Cihaz ve uygulama bilgisi: cihaz modeli, işletim sistemi sürümü, uygulama sürümü, dil ve IP adresinden türetilen ülke ya da bölge. IP adresi saklanmaz.</li>
-</ul>
-<p>Hesap kimliğin analitiğe gönderilmez. Analitik verisi hesabınla eşleştirilmez. "Hayır" dersen hiçbir olay gönderilmez.</p>
-<p>Reklam kimliği toplanmaz. Uygulama Android reklam kimliği iznini içermez ve analitiğin reklam kimliği toplaması kapalıdır.</p>
-
-<h3>2.2 Hesap ve bulut kayıt (isteğe bağlı)</h3>
-<p>Giriş yapmak isteğe bağlıdır. Giriş yaparsan Google Firebase Authentication ve Cloud Firestore aracılığıyla şunlar işlenir:</p>
-<ul>
-<li>Hesap kimliği (Firebase kullanıcı kimliği) ve giriş sağlayıcısının kimliği.</li>
-<li>Google ile girişte: Google hesabının e-posta adresi. Google, hesap kaydına adını ve profil fotoğrafının adresini de iletebilir. Oyun bunları okumaz ve göstermez.</li>
-<li>Apple ile girişte (yalnız iOS): ad ve e-posta istenmez. Yalnız Apple'ın verdiği hesap kimliği işlenir.</li>
-<li>Oyun kaydın: ilerleme, ekonomi durumu, satın alım defteri (işlem kimlikleri), kayıt zamanı ve kaydın yapıldığı cihazın modeli. Cihaza verdiğin ad kaydedilmez.</li>
-</ul>
-
-<h3>2.3 Satın almalar</h3>
-<p>Oyun mağazalarda yayımlandığı andan itibaren satın almalar Google Play ya da App Store üzerinden yapılır. Ödemeyi mağaza alır. Kart ve ödeme bilgilerini görmeyiz.</p>
-<p>Satın almanın doğrulanması ve geri yüklenmesi için RevenueCat hizmeti şunları işler: satın alınan ürün, işlem kimliği, makbuz ya da satın alma belirteci, tarih, ülke ve para birimi, RevenueCat'in anonim kullanıcı kimliği. Giriş yaptıysan bunun yerine hesap kimliğin kullanılır.</p>
-
-<h3>2.4 Uzaktan yapılandırma</h3>
-<p>Oyun, denge ve acil durum ayarlarını Firebase Remote Config'ten alır. Bu sırada Firebase kurulum kimliği ve teknik bağlantı bilgisi (IP adresi, uygulama sürümü, dil) Google tarafından işlenir. Bu, analitik onayından bağımsızdır ve oyunun çalışması için gereklidir.</p>
-
-<h3>2.5 Liderlik tabloları</h3>
-<ul>
-<li>Android: Google Play Games. Play Games profilin varsa oyun açılışta sessizce giriş dener ve puanlarını Google'a gönderir. Tabloda Play Games oyuncu adın görünür. Play Games'e giriş yapılmamışsa puan gönderilmez. Bu veriler Google'ın kendi gizlilik politikasına tabidir ve Play Games ayarlarından yönetilir.</li>
-<li>iOS: Apple Game Center. Aynı şekilde Apple'ın koşullarına tabidir.</li>
-</ul>
-
-<h3>2.6 Reklamlar</h3>
-<p>Bu sürümde üçüncü taraf reklam gösterilmez ve reklam amaçlı veri toplanmaz. Oyuna reklam eklendiğinde bu politika önce güncellenir.</p>
-
-<h3>2.7 Cihazda kalan veriler</h3>
-<p>Oyun kaydın, ayarların ve tanılama günlükleri yalnız cihazında durur. Günlüklerde e-posta maskelenir, giriş belirteçleri yazılmaz. Uygulamayı silince bunlar da silinir.</p>
-
-<h2>3. Amaçlar ve hukuki dayanak</h2>
-<div class="scroll">
-<table>
-<thead>
-<tr><th scope="col">Amaç</th><th scope="col">Veri</th><th scope="col">Dayanak (KVKK md. 5 / GDPR md. 6)</th></tr>
-</thead>
-<tbody>
-<tr><td>Oyunu geliştirmek, dengeyi ölçmek</td><td>2.1</td><td>Açık rıza</td></tr>
-<tr><td>Hesap, bulut kayıt, cihazlar arası geçiş</td><td>2.2</td><td>Sözleşmenin ifası (senin isteğinle)</td></tr>
-<tr><td>Satın almayı teslim etmek, geri yüklemek, sahteciliği önlemek</td><td>2.3</td><td>Sözleşmenin ifası, meşru menfaat, yasal yükümlülük</td></tr>
-<tr><td>Oyunu çalıştırmak ve uzaktan ayarlamak</td><td>2.4</td><td>Meşru menfaat</td></tr>
-<tr><td>Liderlik tabloları</td><td>2.5</td><td>Senin isteğin (platform profilin)</td></tr>
-</tbody>
-</table>
-</div>
-
-<h2>4. Kimlerle çalışıyoruz (veri işleyenler)</h2>
-<div class="scroll">
-<table>
-<thead>
-<tr><th scope="col">Hizmet</th><th scope="col">Sağlayıcı</th><th scope="col">Ne için</th></tr>
-</thead>
-<tbody>
-<tr><td>Firebase Analytics, Authentication, Cloud Firestore, Remote Config</td><td>Google LLC / Google Ireland Ltd.</td><td>Analitik, hesap, bulut kayıt, yapılandırma</td></tr>
-<tr><td>Google Play Games, Google Play Faturalandırma</td><td>Google</td><td>Liderlik tablosu, ödeme</td></tr>
-<tr><td>Sign in with Apple, Game Center, App Store (iOS)</td><td>Apple</td><td>Giriş, liderlik tablosu, ödeme</td></tr>
-<tr><td>RevenueCat</td><td>RevenueCat, Inc. (ABD)</td><td>Satın alma doğrulama</td></tr>
-</tbody>
-</table>
-</div>
-<p>Bunların dışında verilerini üçüncü kişilere satmaz, kiralamaz ve pazarlama amacıyla aktarmayız. Yasal zorunluluk hâlinde yetkili makamlara bilgi verilebilir.</p>
-
-<h2>5. Yurt dışına aktarım</h2>
-<p>Sunucular Türkiye dışındadır. Bulut kayıt Google veri merkezlerinde tutulur. Analitik, kimlik doğrulama ve RevenueCat verileri ABD dahil başka ülkelerde işlenebilir. Aktarımlar sağlayıcıların standart sözleşme hükümlerine dayanır.</p>
-
-<h2>6. Saklama süreleri</h2>
-<div class="scroll">
-<table>
-<thead>
-<tr><th scope="col">Veri</th><th scope="col">Süre</th></tr>
-</thead>
-<tbody>
-<tr><td>Bulut kayıt (ana kayıt)</td><td>Hesabını silene kadar</td></tr>
-<tr><td>Kayıt çakışmasında seçmediğin kaydın kopyası</td><td>En çok 30 gün tutulması hedeflenir. Süresi dolan kopya, oyunu bir sonraki açışında silinir. Hesabını silersen o da silinir.</td></tr>
-<tr><td>Hesap kimliği ve e-posta</td><td>Hesabını silene kadar</td></tr>
-<tr><td>Anonim kullanım verisi</td><td>En çok 14 ay (Google Analytics saklama ayarı)</td></tr>
-<tr><td>Satın alma kayıtları</td><td>Yasanın gerektirdiği süre boyunca (yasal saklama süreleri)</td></tr>
-</tbody>
-</table>
-</div>
-
-<h2>7. Hakların</h2>
-<p>KVKK md. 11 ve, AB ya da Birleşik Krallık'taysan, GDPR kapsamında şu haklara sahipsin: verilerinin işlenip işlenmediğini öğrenme, bilgi ve kopya isteme, düzeltme, silme, işlemeyi kısıtlama, itiraz etme, verdiğin rızayı geri alma ve veri taşınabilirliği.</p>
-<p>Başvurunu <a href="mailto:support@ludawn.com">support@ludawn.com</a> adresine gönder. En geç 30 gün içinde yanıtlarız. Ayrıca Kişisel Verileri Koruma Kurulu'na ya da bulunduğun ülkenin veri koruma otoritesine şikâyet edebilirsin.</p>
-<p>Oyunun içinden yapabileceklerin:</p>
-<ul>
-<li><strong>Analitiği kapatmak:</strong> Ayarlar › "Anonim kullanım verisi".</li>
-<li><strong>Hesabını ve bulut kaydını silmek:</strong> Ayarlar › Hesap › "Hesabımı sil". Bulut kaydın ve hesabın silinir. Cihazdaki kayıt kalır ve misafir olarak oynamayı sürdürürsün. Satın alımların mağaza hesabında kalır ve geri yüklenebilir.</li>
-<li><strong>Çıkış yapmak:</strong> Ayarlar › Hesap › "Çıkış yap".</li>
-</ul>
-<p>Uygulamayı açamıyorsan: <a href="/account-deletion/">Hesap ve veri silme sayfası</a>.</p>
-<p>Anonim kullanım verisi hesabına bağlı değildir. Bu yüzden seninle eşleştirilemez.</p>
-
-<h2>8. Çocuklar</h2>
-<p>Oyun 13 yaş ve üzeri içindir ve çocuklara yönelik değildir. 13 yaşından küçüklerden bilerek veri toplamayız. Böyle bir durumu fark edersen <a href="mailto:support@ludawn.com">support@ludawn.com</a> adresine yaz, ilgili veriyi sileriz. Ülkendeki yasa rıza için daha büyük bir yaş arıyorsa, o yaşın altındaysan anonim kullanım verisine onay vermeden ve giriş yapmadan önce velinin iznini al.</p>
-
-<h2>9. Güvenlik</h2>
-<p>Veriler aktarım sırasında şifrelenir (TLS). Bulut kayda yalnız hesabın sahibi erişebilir (Firestore güvenlik kuralları). Hiçbir yöntem yüzde yüz güvenli değildir. Bir ihlal hâlinde yasal bildirim yükümlülüklerimizi yerine getiririz.</p>
-
-<h2>10. Değişiklikler</h2>
-<p>Bu politikayı güncellersek yeni sürümü bu sayfada yayımlarız. Önemli değişiklikleri oyun içinde duyururuz. Sayfanın başındaki tarih son güncellemeyi gösterir.</p>
-</article>
-
+<nav class="nav" aria-label="Site"><a href="/#games">Oyunlar</a><a href="/privacy/">Gizlilik</a><a href="mailto:support@ludawn.com">İletişim</a></nav>
+</div></div>
+<main class="wrap">
+<section class="prose">
+<h1>Gizlilik</h1>
+<h2>Bu web sitesi</h2>
+<p>ludawn.com çerez kullanmaz, izleyici ya da analiz aracı çalıştırmaz ve senden kişisel bilgi istemez. Site GitHub Pages üzerinde barınır; barındırma sağlayıcısı güvenlik amacıyla erişim kayıtları (IP adresi gibi) tutabilir. Bize e-posta yazarsan, yazdıklarını yalnız sana yanıt vermek için kullanırız.</p>
+<h2>Oyunlar</h2>
+<p>Her oyunun kendi gizlilik politikası vardır:</p>
+<ul><li><a href="/three-arrows/privacy/">Üç Ok: Selçuklu Seferi <span lang="en">(Three Arrows: Seljuk Campaign)</span></a></li></ul>
+<p>Hesap ve veri silme sayfaları:</p>
+<ul><li><a href="/three-arrows/account-deletion/">Üç Ok: Selçuklu Seferi <span lang="en">(Three Arrows: Seljuk Campaign)</span></a></li></ul>
 <hr>
-
-<article id="en" lang="en">
-<h1>Privacy Policy</h1>
-<p class="muted">Last updated: 10 November 2026</p>
-<div class="box">
-<p><strong>Game:</strong> Three Arrows: Seljuk Campaign (Turkish title: <span lang="tr">Üç Ok: Selçuklu Seferi</span>; package name <code>com.ludawn.selcuklular</code>)<br>
-<strong>Data controller:</strong> Yahya Güner (Ludawn)<br>
-<strong>Contact:</strong> <a href="mailto:support@ludawn.com">support@ludawn.com</a></p>
+<div lang="en">
+<h1>Privacy</h1>
+<h2>This website</h2>
+<p>ludawn.com uses no cookies, runs no trackers or analytics, and asks you for no personal information. The site is hosted on GitHub Pages; the hosting provider may keep access logs (such as IP addresses) for security. If you email us, we use what you write only to reply to you.</p>
+<h2>Games</h2>
+<p>Each game has its own privacy policy:</p>
+<ul><li><a href="/three-arrows/privacy/">Üç Ok: Selçuklu Seferi <span lang="en">(Three Arrows: Seljuk Campaign)</span></a></li></ul>
+<p>Account and data deletion pages:</p>
+<ul><li><a href="/three-arrows/account-deletion/">Üç Ok: Selçuklu Seferi <span lang="en">(Three Arrows: Seljuk Campaign)</span></a></li></ul>
 </div>
-<p>This policy explains which data is processed in the mobile game Three Arrows: Seljuk Campaign, why and how. The game is in Turkish only, so menu names are given in Turkish with their meaning.</p>
-
-<h2>1. In short</h2>
-<ul>
-<li>You play as a guest, without an account. We do not ask for your name, phone number, address, contacts, location, photos or microphone.</li>
-<li>Anonymous usage data is collected only if you tap <span lang="tr">"Kabul"</span> ("Accept"). You can turn it off at any time in Settings.</li>
-<li>The advertising ID is not collected.</li>
-<li>If you sign in (Google or Apple), your game save is stored in the cloud, linked to your account. You can delete your account from inside the game.</li>
-<li>We do not sell your data.</li>
-</ul>
-
-<h2>2. What data we process</h2>
-
-<h3>2.1 Anonymous usage data (optional)</h3>
-<p>You are asked on first launch. If you accept, the following is collected through Google Firebase Analytics:</p>
-<ul>
-<li>In-game events: session start, tutorial steps, wave and battle results, upgrades, ad and store screen events, and the ID and price of a purchased product.</li>
-<li>A randomly generated anonymous installation ID and the Firebase app instance ID.</li>
-<li>Device and app information: device model, operating system version, app version, language, and the country or region derived from your IP address. The IP address is not stored.</li>
-</ul>
-<p>Your account ID is not sent to analytics. Analytics data is not matched to your account. If you decline, no events are sent.</p>
-<p>The advertising ID is not collected. The app does not include the Android advertising ID permission, and advertising ID collection in analytics is turned off.</p>
-
-<h3>2.2 Account and cloud save (optional)</h3>
-<p>Signing in is optional. If you sign in, the following is processed through Google Firebase Authentication and Cloud Firestore:</p>
-<ul>
-<li>An account ID (Firebase user ID) and the ID from your sign-in provider.</li>
-<li>With Google sign-in: the email address of your Google account. Google may also pass your name and the address of your profile picture to the account record. The game does not read or show them.</li>
-<li>With Sign in with Apple (iOS only): name and email are not requested. Only the account ID given by Apple is processed.</li>
-<li>Your game save: progress, economy state, purchase ledger (transaction IDs), save time and the model of the device that made the save. The name you gave your device is not saved.</li>
-</ul>
-
-<h3>2.3 Purchases</h3>
-<p>From the game's first store release, purchases are made through Google Play or the App Store. The store takes the payment. We do not see your card or payment details.</p>
-<p>To validate and restore purchases, the RevenueCat service processes: the product bought, the transaction ID, the receipt or purchase token, the date, the country and currency, and RevenueCat's anonymous user ID. If you are signed in, your account ID is used instead.</p>
-
-<h3>2.4 Remote configuration</h3>
-<p>The game fetches balance and emergency settings from Firebase Remote Config. While doing so, Google processes the Firebase installation ID and technical connection data (IP address, app version, language). This does not depend on analytics consent and is needed for the game to work.</p>
-
-<h3>2.5 Leaderboards</h3>
-<ul>
-<li>Android: Google Play Games. If you have a Play Games profile, the game tries a silent sign-in at launch and sends your scores to Google. Your Play Games player name is shown on the leaderboard. If you are not signed in to Play Games, no score is sent. This data is subject to Google's own privacy policy and is managed in the Play Games settings.</li>
-<li>iOS: Apple Game Center. In the same way, it is subject to Apple's terms.</li>
-</ul>
-
-<h3>2.6 Ads</h3>
-<p>This version shows no third-party ads and collects no data for advertising. When ads are added to the game, this policy will be updated first.</p>
-
-<h3>2.7 Data that stays on your device</h3>
-<p>Your game save, your settings and diagnostic logs stay only on your device. In the logs, email addresses are masked and sign-in tokens are not written. They are removed when you uninstall the app.</p>
-
-<h2>3. Purposes and legal basis</h2>
-<div class="scroll">
-<table>
-<thead>
-<tr><th scope="col">Purpose</th><th scope="col">Data</th><th scope="col">Basis (KVKK Art. 5 / GDPR Art. 6)</th></tr>
-</thead>
-<tbody>
-<tr><td>Improving the game, measuring balance</td><td>2.1</td><td>Consent</td></tr>
-<tr><td>Account, cloud save, moving between devices</td><td>2.2</td><td>Performance of a contract (at your request)</td></tr>
-<tr><td>Delivering and restoring purchases, preventing fraud</td><td>2.3</td><td>Performance of a contract, legitimate interest, legal obligation</td></tr>
-<tr><td>Running the game and configuring it remotely</td><td>2.4</td><td>Legitimate interest</td></tr>
-<tr><td>Leaderboards</td><td>2.5</td><td>Your request (your platform profile)</td></tr>
-</tbody>
-</table>
-</div>
-<p>KVKK is the Turkish Personal Data Protection Law No. 6698.</p>
-
-<h2>4. Who we work with (processors)</h2>
-<div class="scroll">
-<table>
-<thead>
-<tr><th scope="col">Service</th><th scope="col">Provider</th><th scope="col">Used for</th></tr>
-</thead>
-<tbody>
-<tr><td>Firebase Analytics, Authentication, Cloud Firestore, Remote Config</td><td>Google LLC / Google Ireland Ltd.</td><td>Analytics, account, cloud save, configuration</td></tr>
-<tr><td>Google Play Games, Google Play Billing</td><td>Google</td><td>Leaderboard, payment</td></tr>
-<tr><td>Sign in with Apple, Game Center, App Store (iOS)</td><td>Apple</td><td>Sign-in, leaderboard, payment</td></tr>
-<tr><td>RevenueCat</td><td>RevenueCat, Inc. (USA)</td><td>Purchase validation</td></tr>
-</tbody>
-</table>
-</div>
-<p>Apart from these, we do not sell, rent or pass your data to third parties for marketing. Information may be given to the competent authorities where the law requires it.</p>
-
-<h2>5. International transfers</h2>
-<p>The servers are outside Türkiye. The cloud save is kept in Google data centres. Analytics, authentication and RevenueCat data may be processed in other countries, including the USA. Transfers rely on the providers' standard contractual clauses.</p>
-
-<h2>6. Retention</h2>
-<div class="scroll">
-<table>
-<thead>
-<tr><th scope="col">Data</th><th scope="col">Period</th></tr>
-</thead>
-<tbody>
-<tr><td>Cloud save (main save)</td><td>Until you delete your account</td></tr>
-<tr><td>The copy of the save you did not choose in a save conflict</td><td>Kept for up to 30 days as a target. An expired copy is deleted the next time you open the game. It is also deleted if you delete your account.</td></tr>
-<tr><td>Account ID and email</td><td>Until you delete your account</td></tr>
-<tr><td>Anonymous usage data</td><td>Up to 14 months (Google Analytics retention setting)</td></tr>
-<tr><td>Purchase records</td><td>For as long as the law requires (statutory retention periods)</td></tr>
-</tbody>
-</table>
-</div>
-
-<h2>7. Your rights</h2>
-<p>Under KVKK Art. 11 and, if you are in the EU or the United Kingdom, under the GDPR, you have the right to: learn whether your data is processed, request information and a copy, have it corrected or deleted, restrict processing, object, withdraw your consent, and data portability.</p>
-<p>Send your request to <a href="mailto:support@ludawn.com">support@ludawn.com</a>. We reply within 30 days at the latest. You may also complain to the Turkish Personal Data Protection Board or to the data protection authority of your country.</p>
-<p>What you can do inside the game:</p>
-<ul>
-<li><strong>Turn off analytics:</strong> <span lang="tr">Ayarlar › "Anonim kullanım verisi"</span> (Settings › "Anonymous usage data").</li>
-<li><strong>Delete your account and cloud save:</strong> <span lang="tr">Ayarlar › Hesap › "Hesabımı sil"</span> (Settings › Account › "Delete my account"). Your cloud save and account are deleted. The save on your device stays and you keep playing as a guest. Your purchases stay in your store account and can be restored.</li>
-<li><strong>Sign out:</strong> <span lang="tr">Ayarlar › Hesap › "Çıkış yap"</span> (Settings › Account › "Sign out").</li>
-</ul>
-<p>If you cannot open the app: <a href="/account-deletion/#en">Account and data deletion page</a>.</p>
-<p>Anonymous usage data is not linked to your account. For that reason it cannot be matched to you.</p>
-
-<h2>8. Children</h2>
-<p>The game is for ages 13 and over and is not directed at children. We do not knowingly collect data from children under 13. If you become aware of such a case, write to <a href="mailto:support@ludawn.com">support@ludawn.com</a> and we will delete the data. If the law in your country sets a higher age for consent and you are below it, ask your parent or guardian for permission before you accept anonymous usage data or sign in.</p>
-
-<h2>9. Security</h2>
-<p>Data is encrypted in transit (TLS). Only the account owner can access the cloud save (Firestore security rules). No method is one hundred percent secure. In case of a breach we will meet our legal notification duties.</p>
-
-<h2>10. Changes</h2>
-<p>If we update this policy, we publish the new version on this page. We announce important changes inside the game. The date at the top of the page shows the last update.</p>
-</article>
-
+<p class="muted">İletişim / Contact: <a href="mailto:support@ludawn.com">support@ludawn.com</a></p>
+</section>
 </main>
-<footer>
-<p>© 2026 Ludawn · <a href="/">ludawn.com</a> · <a href="mailto:support@ludawn.com">support@ludawn.com</a></p>
-</footer>
+<footer><div class="wrap">
+<p>© 2026 Ludawn · <a href="/privacy/">Gizlilik / Privacy</a> · <a href="mailto:support@ludawn.com">support@ludawn.com</a></p>
+</div></footer>
 </body>
 </html>
