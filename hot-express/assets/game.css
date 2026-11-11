@@ -34,9 +34,9 @@ header{position:sticky;top:0;z-index:10;background:rgba(11,12,14,.82);backdrop-f
 .brand{display:block;line-height:0}
 .brand img{height:2.4rem;width:auto}
 .right{display:flex;align-items:center;gap:1rem}
-.studio{display:block;line-height:0;border-radius:9px;opacity:.9;transition:opacity .15s ease,transform .15s ease}
-.studio img{width:2rem;height:2rem;box-shadow:0 0 0 1px var(--line);border-radius:9px}
-.studio:hover{opacity:1;transform:translateY(-1px)}
+.studio{display:block;line-height:0;padding:.35rem 0;opacity:.8;transition:opacity .15s ease}
+.studio img{height:1rem;width:auto}
+.studio:hover{opacity:1}
 .lang-switch{display:inline-flex;border:1px solid var(--line);border-radius:10px;padding:2px;background:var(--fill)}
 .lang-switch button{all:unset;cursor:pointer;font-size:.74rem;font-weight:700;letter-spacing:.08em;padding:.28rem .6rem;border-radius:8px;color:var(--soft)}
 .lang-switch button[aria-pressed="true"]{background:linear-gradient(var(--red-a),var(--red-b));color:var(--fg)}
