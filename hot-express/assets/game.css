@@ -1,0 +1,109 @@
+/* Hot Express. Used only under /hot-express/.
+   Follows the game's own interface (HudDraw): dark glass panels, white text,
+   a red gradient primary button, clear glass secondary buttons, yellow for
+   stars and parcels. The game's UI is dark only, so is this section. */
+:root{
+  color-scheme:dark;
+  --bg:#0B0C0E; --glass:rgba(19,20,23,.92); --glass-2:rgba(15,16,19,.8);
+  --fg:#FFFFFF; --soft:#B6B8BF; --muted:#8E8E9A;
+  --red:#E11D2A; --red-hi:#FF4B55; --red-lo:#B0121C; --red-a:#FF2A3A; --red-b:#B80D1E; --red-edge:#FF8C94;
+  --yellow:#FFC21E; --orange:#FF8A1F; --green:#22B35E;
+  --edge:rgba(255,255,255,.12); --line:rgba(255,255,255,.16); --fill:rgba(255,255,255,.06);
+  --shadow:0 9px 22px rgba(0,0,0,.3);
+  --sans:"Segoe UI",system-ui,-apple-system,Roboto,"Noto Sans",Arial,sans-serif;
+  --r:24px; --r-btn:14px; --wrap:66rem;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;background:var(--bg)}
+body{margin:0;background:var(--bg);color:var(--fg);font:400 1rem/1.65 var(--sans);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:var(--red-hi);text-underline-offset:.18em}
+a:hover{color:var(--fg)}
+:focus-visible{outline:2px solid var(--red-hi);outline-offset:3px;border-radius:6px}
+img{max-width:100%;display:block}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 clamp(1rem,4vw,2rem)}
+
+/* Language: both ship in the page, /assets/lang.js picks one. */
+html[data-lang="tr"] body [lang="en"],html[data-lang="en"] body [lang="tr"]{display:none!important}
+html:not([data-lang]) .lang-switch{display:none}
+html:not([data-lang]) span[lang="en"]::before{content:" / "}
+html[data-lang] .both-only,html[data-lang] .langs{display:none}
+
+/* Header: a glass bar over the page */
+header{position:sticky;top:0;z-index:10;background:rgba(11,12,14,.82);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--edge)}
+.bar{max-width:var(--wrap);margin:0 auto;padding:0 clamp(1rem,4vw,2rem);min-height:4rem;display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.brand{display:block;line-height:0}
+.brand img{height:2.4rem;width:auto}
+.right{display:flex;align-items:center;gap:1rem}
+.studio{color:var(--soft);text-decoration:none;font-size:.9rem;font-weight:600}
+.studio:hover{color:var(--fg)}
+.lang-switch{display:inline-flex;border:1px solid var(--line);border-radius:10px;padding:2px;background:var(--fill)}
+.lang-switch button{all:unset;cursor:pointer;font-size:.74rem;font-weight:700;letter-spacing:.08em;padding:.28rem .6rem;border-radius:8px;color:var(--soft)}
+.lang-switch button[aria-pressed="true"]{background:linear-gradient(var(--red-a),var(--red-b));color:var(--fg)}
+.lang-switch button:focus-visible{outline:2px solid var(--red-hi)}
+.langs{min-height:0;padding-bottom:.6rem;font-size:.9rem;color:var(--soft)}
+
+/* Hero: the logo on the game's dark red glow */
+.hero{position:relative;isolation:isolate;overflow:hidden;padding:clamp(3rem,8vw,5.5rem) 0 clamp(3rem,7vw,4.5rem)}
+.hero::before{content:"";position:absolute;z-index:-1;inset:-20% -10% auto;height:120%;background:radial-gradient(closest-side at 30% 45%,rgba(225,29,42,.32),rgba(176,18,28,.12) 55%,transparent 100%)}
+.hero .wrap{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,5vw,3.5rem);align-items:center}
+.hero h1{margin:0 0 1.1rem;line-height:0}
+.hero h1 img{width:min(24rem,80vw);height:auto}
+.badge{display:inline-flex;align-items:center;gap:.5rem;background:var(--fill);border:1px solid var(--line);border-radius:999px;padding:.25rem .8rem;font-size:.82rem;font-weight:700;color:var(--soft);margin-bottom:1.5rem}
+.badge::before{content:"";width:.5rem;height:.5rem;border-radius:50%;background:var(--yellow);box-shadow:0 0 0 4px rgba(255,194,30,.18)}
+.sub{margin:0 0 .9rem;font-size:clamp(1.2rem,2.6vw,1.5rem);font-weight:700;line-height:1.3}
+.desc{margin:0 0 1.75rem;color:var(--soft);max-width:34rem}
+.hero .shot{transform:rotate(1.2deg)}
+@media (max-width:820px){.hero .wrap{grid-template-columns:1fr}.hero .shot{transform:none}}
+
+/* Glass panel and screenshots */
+.glass{background:var(--glass);border:1px solid var(--edge);border-radius:var(--r);box-shadow:var(--shadow)}
+.shot{margin:0;padding:8px;background:var(--glass);border:1px solid var(--edge);border-radius:var(--r);box-shadow:var(--shadow)}
+.shot img{width:100%;height:auto;border-radius:calc(var(--r) - 8px)}
+.shot figcaption{padding:.65rem .6rem .3rem;font-size:.92rem;font-weight:600}
+.shots{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,22rem),1fr));gap:1.25rem}
+.shots .wide{grid-column:1/-1}
+
+/* Sections */
+.sec{padding:clamp(2.5rem,6vw,4rem) 0}
+.sec+.sec{border-top:1px solid var(--edge)}
+.sec-title{display:flex;align-items:center;gap:.7rem;margin:0 0 1.5rem;font-size:1.35rem;line-height:1.2}
+.sec-title::before{content:"";width:4px;height:1.3em;border-radius:2px;background:linear-gradient(var(--red-a),var(--red-b))}
+.note{color:var(--muted);font-size:.92rem}
+
+/* Buttons: red gradient primary with a top gloss, clear glass secondary */
+.btns{display:flex;flex-wrap:wrap;gap:.75rem;margin:0;padding:0;list-style:none}
+.btns li{margin:0}
+.btn{position:relative;display:inline-flex;align-items:baseline;flex-wrap:wrap;gap:.1rem .5rem;padding:.75rem 1.2rem;border-radius:var(--r-btn);font-weight:700;text-decoration:none;color:var(--fg);border:1px solid var(--line);background:var(--fill);transition:background .15s ease,border-color .15s ease,box-shadow .15s ease}
+.btn:hover{color:var(--fg);background:rgba(255,255,255,.1);border-color:var(--red)}
+.btn.primary{border-color:var(--red-edge);background:linear-gradient(rgba(255,255,255,.16),rgba(255,255,255,0) 50%),linear-gradient(var(--red-a),var(--red-b))}
+.btn.primary:hover{box-shadow:0 0 0 4px rgba(225,29,42,.28)}
+.btn small{font-weight:400;font-size:.88rem;color:var(--soft)}
+@media (max-width:480px){.btns li{flex:1 1 100%}.btn{width:100%}}
+
+/* Text pages (privacy, account deletion) */
+.doc{margin:2rem 0;padding:clamp(1.25rem,4vw,2.5rem)}
+.doc h1{font-size:clamp(1.6rem,4.5vw,2.2rem);line-height:1.2;margin:0 0 .35rem;font-weight:800}
+.doc h2{font-size:1.2rem;line-height:1.3;margin:2.25rem 0 .6rem;padding-bottom:.35rem;border-bottom:1px solid var(--line)}
+.doc p,.doc li{color:#DCDDE2}
+p,ul,ol{margin:.5rem 0 1rem}
+ul,ol{padding-left:1.4rem}
+li{margin:.3rem 0}
+li::marker{color:var(--red-hi)}
+.muted{color:var(--muted)}
+.box{background:var(--fill);border:1px solid var(--line);border-left:4px solid var(--red);border-radius:12px;padding:.7rem 1rem;margin:1.25rem 0}
+.box p{margin:.25rem 0}
+.steps li{margin:.5rem 0}
+.scroll{overflow-x:auto;border-radius:12px;border:1px solid var(--line);margin:.5rem 0 1rem}
+table{border-collapse:collapse;width:100%;font-size:.93rem}
+th,td{padding:.55rem .75rem;text-align:left;vertical-align:top;border-bottom:1px solid var(--edge)}
+th{background:rgba(225,29,42,.16);font-weight:700}
+tr:last-child td{border-bottom:0}
+hr{border:0;height:1px;background:var(--line);margin:2.5rem 0}
+code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:.9em;overflow-wrap:anywhere;background:var(--fill);border:1px solid var(--edge);padding:.05em .35em;border-radius:6px}
+
+/* Footer */
+footer{margin-top:2rem;border-top:1px solid var(--edge);color:var(--muted);font-size:.88rem}
+footer .bar{flex-wrap:wrap;padding-top:1.5rem;padding-bottom:1.75rem}
+footer a{color:var(--soft);text-decoration:none}
+footer a:hover{color:var(--fg)}
+footer nav{display:flex;flex-wrap:wrap;gap:.4rem 1.25rem}
