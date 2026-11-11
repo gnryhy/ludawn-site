@@ -1,43 +1,60 @@
 <!doctype html>
-<html lang="tr">
+<html lang="tr" data-title-tr="Gizlilik · Ludawn" data-title-en="Privacy · Ludawn">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Gizlilik · Ludawn</title>
 <meta name="description" content="Ludawn web sitesi ve oyunları için gizlilik bilgileri. Privacy information for the Ludawn website and games.">
+<meta name="theme-color" content="#160A16">
+<link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="/assets/site.css">
+<script src="/assets/lang.js"></script>
 </head>
 <body>
-<div class="top"><div class="wrap">
-<a class="brand" href="/">Ludawn</a>
-<nav class="nav" aria-label="Site"><a href="/#games">Oyunlar</a><a href="/privacy/">Gizlilik</a><a href="mailto:support@ludawn.com">İletişim</a></nav>
-</div></div>
-<main class="wrap">
+<header class="top"><div class="wrap">
+<a class="brand" href="/" aria-label="Ludawn Interactive"><span class="logo" role="img" aria-label="Ludawn Interactive"></span></a>
+<nav class="nav" aria-label="Site">
+<a href="/#games"><span lang="tr">Oyunlar</span><span lang="en">Games</span></a>
+<a class="hide-sm" href="/privacy/"><span lang="tr">Gizlilik</span><span lang="en">Privacy</span></a>
+<a href="/#contact"><span lang="tr">İletişim</span><span lang="en">Contact</span></a>
+<span class="lang-switch" role="group" aria-label="Dil / Language"><button type="button" data-set-lang="tr">TR</button><button type="button" data-set-lang="en">EN</button></span>
+</nav>
+</div></header>
+<main class="wrap page">
 <section class="prose">
+<div lang="tr">
 <h1>Gizlilik</h1>
 <h2>Bu web sitesi</h2>
 <p>ludawn.com çerez kullanmaz, izleyici ya da analiz aracı çalıştırmaz ve senden kişisel bilgi istemez. Site GitHub Pages üzerinde barınır; barındırma sağlayıcısı güvenlik amacıyla erişim kayıtları (IP adresi gibi) tutabilir. Bize e-posta yazarsan, yazdıklarını yalnız sana yanıt vermek için kullanırız.</p>
 <h2>Oyunlar</h2>
 <p>Her oyunun kendi gizlilik politikası vardır:</p>
-<ul><li><a href="/three-arrows/privacy/">Üç Ok: Selçuklu Seferi <span lang="en">(Three Arrows: Seljuk Campaign)</span></a></li></ul>
+<ul><li><a href="/three-arrows/privacy/">Üç Ok: Selçuklu Seferi (Three Arrows: Seljuk Campaign)</a></li></ul>
 <p>Hesap ve veri silme sayfaları:</p>
-<ul><li><a href="/three-arrows/account-deletion/">Üç Ok: Selçuklu Seferi <span lang="en">(Three Arrows: Seljuk Campaign)</span></a></li></ul>
-<hr>
+<ul><li><a href="/three-arrows/account-deletion/">Üç Ok: Selçuklu Seferi (Three Arrows: Seljuk Campaign)</a></li></ul>
+<p class="muted">İletişim: <a href="mailto:support@ludawn.com">support@ludawn.com</a></p>
+</div>
+<hr class="both-only">
 <div lang="en">
 <h1>Privacy</h1>
 <h2>This website</h2>
 <p>ludawn.com uses no cookies, runs no trackers or analytics, and asks you for no personal information. The site is hosted on GitHub Pages; the hosting provider may keep access logs (such as IP addresses) for security. If you email us, we use what you write only to reply to you.</p>
 <h2>Games</h2>
 <p>Each game has its own privacy policy:</p>
-<ul><li><a href="/three-arrows/privacy/">Üç Ok: Selçuklu Seferi <span lang="en">(Three Arrows: Seljuk Campaign)</span></a></li></ul>
+<ul><li><a href="/three-arrows/privacy/">Three Arrows: Seljuk Campaign (Üç Ok: Selçuklu Seferi)</a></li></ul>
 <p>Account and data deletion pages:</p>
-<ul><li><a href="/three-arrows/account-deletion/">Üç Ok: Selçuklu Seferi <span lang="en">(Three Arrows: Seljuk Campaign)</span></a></li></ul>
+<ul><li><a href="/three-arrows/account-deletion/">Three Arrows: Seljuk Campaign (Üç Ok: Selçuklu Seferi)</a></li></ul>
+<p class="muted">Contact: <a href="mailto:support@ludawn.com">support@ludawn.com</a></p>
 </div>
-<p class="muted">İletişim / Contact: <a href="mailto:support@ludawn.com">support@ludawn.com</a></p>
 </section>
 </main>
 <footer><div class="wrap">
-<p>© 2026 Ludawn · <a href="/privacy/">Gizlilik / Privacy</a> · <a href="mailto:support@ludawn.com">support@ludawn.com</a></p>
+<span class="logo" role="img" aria-label="Ludawn Interactive"></span>
+<nav aria-label="Footer">
+<a href="/privacy/"><span lang="tr">Gizlilik</span><span lang="en">Privacy</span></a>
+<a href="/account-deletion/"><span lang="tr">Hesap silme</span><span lang="en">Account deletion</span></a>
+<a href="mailto:support@ludawn.com">support@ludawn.com</a>
+</nav>
+<span>© 2026 Ludawn</span>
 </div></footer>
 </body>
 </html>

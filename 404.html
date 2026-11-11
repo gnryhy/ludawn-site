@@ -1,26 +1,40 @@
 <!doctype html>
-<html lang="tr">
+<html lang="tr" data-title-tr="Sayfa bulunamadı · Ludawn" data-title-en="Page not found · Ludawn">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Sayfa bulunamadı · Ludawn</title>
 <meta name="description" content="Sayfa bulunamadı. Page not found.">
+<meta name="theme-color" content="#160A16">
+<link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="/assets/site.css">
+<script src="/assets/lang.js"></script>
 </head>
 <body>
-<div class="top"><div class="wrap">
-<a class="brand" href="/">Ludawn</a>
-<nav class="nav" aria-label="Site"><a href="/#games">Oyunlar</a><a href="/privacy/">Gizlilik</a><a href="mailto:support@ludawn.com">İletişim</a></nav>
-</div></div>
-<main class="wrap">
-<section class="hero">
-<h1>Sayfa bulunamadı</h1>
-<p lang="en">Page not found.</p>
-<p><a href="/">ludawn.com</a></p>
+<header class="top"><div class="wrap">
+<a class="brand" href="/" aria-label="Ludawn Interactive"><span class="logo" role="img" aria-label="Ludawn Interactive"></span></a>
+<nav class="nav" aria-label="Site">
+<a href="/#games"><span lang="tr">Oyunlar</span><span lang="en">Games</span></a>
+<a class="hide-sm" href="/privacy/"><span lang="tr">Gizlilik</span><span lang="en">Privacy</span></a>
+<a href="/#contact"><span lang="tr">İletişim</span><span lang="en">Contact</span></a>
+<span class="lang-switch" role="group" aria-label="Dil / Language"><button type="button" data-set-lang="tr">TR</button><button type="button" data-set-lang="en">EN</button></span>
+</nav>
+</div></header>
+<main class="wrap page">
+<section class="prose">
+<h1><span lang="tr">Sayfa bulunamadı</span><span lang="en">Page not found</span></h1>
+<p><span lang="tr">Aradığın sayfa burada değil.</span><span lang="en">The page you're looking for isn't here.</span></p>
+<p><a class="btn btn-solid" href="/"><span lang="tr">Ana sayfaya dön</span><span lang="en">Back to home</span></a></p>
 </section>
 </main>
 <footer><div class="wrap">
-<p>© 2026 Ludawn · <a href="/privacy/">Gizlilik / Privacy</a> · <a href="mailto:support@ludawn.com">support@ludawn.com</a></p>
+<span class="logo" role="img" aria-label="Ludawn Interactive"></span>
+<nav aria-label="Footer">
+<a href="/privacy/"><span lang="tr">Gizlilik</span><span lang="en">Privacy</span></a>
+<a href="/account-deletion/"><span lang="tr">Hesap silme</span><span lang="en">Account deletion</span></a>
+<a href="mailto:support@ludawn.com">support@ludawn.com</a>
+</nav>
+<span>© 2026 Ludawn</span>
 </div></footer>
 </body>
 </html>
